@@ -1,0 +1,60 @@
+<nav class="navbar-default" >
+  
+    <div class="container-fluid tit">
+      FLAMES
+    
+  </div>
+</nav>
+
+
+<section class = "container">
+
+
+
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@game) do |f| %>
+      <%= f.label :enter_a_name %>
+      <%= f.text_field :name1, class: "centre", id: "name2" %>
+
+      <%= f.label :enter_another_name %>
+      <%= f.text_field :name2, class: "centre", id: "name2" %>
+
+      
+
+      <%= f.submit "PLAY", class: "btn btn-primary btn-lg active" , onclick: "myFunction()" %>
+
+
+    <% end %>
+  </div>
+
+  <div id="add" ><h2 class="centre"  ></h2></div>
+
+<!-- <div id="alert"></div>
+<p class = "centre"> Enter a name</p>
+
+<input class = "centre"  id="name1" > 
+
+
+
+<br>
+
+<p class = "centre"> Enter another name</p>
+
+<input class = "centre"  id="name2" > 
+
+
+
+<br>
+
+
+<button type="button" class = "centre btn btn-primary btn-lg active" onclick="myFunction();">  PLAY  </button>
+<div id="add" ><h2 class="centre"  ></h2></div> -->
+
+</section>
+
+
+
+
+
